@@ -412,7 +412,7 @@
                   [e._v("Lifetime")]
                 ),
                 t("div", { staticClass: "telegram_pricing-table__price" }, [
-                  e._v(" $99.99 "),
+                  e._v(" $0 "),
                 ]),
               ]),
               t("td", { staticClass: "telegram_pricing-table__plan-column" }, [
@@ -422,7 +422,7 @@
                   [e._v("Quarterly")]
                 ),
                 t("div", { staticClass: "telegram_pricing-table__price" }, [
-                  e._v(" $25.99 "),
+                  e._v(" $0 "),
                 ]),
               ]),
               t("td", { staticClass: "telegram_pricing-table__plan-column" }, [
@@ -432,7 +432,7 @@
                   [e._v("Monthly")]
                 ),
                 t("div", { staticClass: "telegram_pricing-table__price" }, [
-                  e._v(" $11.99 "),
+                  e._v(" $0 "),
                 ]),
               ]),
               t("td", { staticClass: "telegram_pricing-table__plan-column" }, [
