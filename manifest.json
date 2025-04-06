@@ -1,0 +1,34 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "assets/image/logo.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "__MSG_appName__"
+   },
+   "background": {
+      "service_worker": "js/background.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/content-script-teleram.js" ],
+      "matches": [ "https://web.telegram.org/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_appDescription__",
+   "host_permissions": [ "https://web.telegram.org/*" ],
+   "icons": {
+      "128": "assets/image/logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArSKkRzXNP3U1JSwoQPAPU+YcFK1j5GDeX441YSOzwhx+5Nc+z0duOQJlt4NC4BenmpGC2dKk5AYjMsJePageRNN57GZkhqB7d3JLD4aME8FoADqQyhBCoA03ORJHwE2oIvb1FBlz45QHeCAR2SMSNHZU6hd2J1wK4g6BPqe5UE4ezGIZ99ZG+GEHFathx4iXYGWK0ULMUangDU+0z/8GLii2t4DLn24sRojEmNF1pXlXU+t8fexOW9qlyEB5DCP7rObDaQCbeWIlhbp1PR4pZsczz1PYEpzVgiKNsPvzDhpr84zPpOOqTCT2BGTPDnp06Ceno3T9WLmUPqvHYPmgKwIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.1",
+   "web_accessible_resources": [ {
+      "matches": [ "https://web.telegram.org/*" ],
+      "resources": [ "js/content-script-inject.js", "assets/*" ]
+   } ]
+}
