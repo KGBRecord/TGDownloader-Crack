@@ -2,7 +2,7 @@
 
 This is an unofficial version of the Telegram Video Downloader, a Chrome extension for downloading private videos from Telegram channels and groups in one click.
 
-This version offers a "Lifetime" subscription at no cost. Compatible with Brave browser.
+This version offers a "Lifetime" subscription at no cost. It has been tested on Brave browser, but it should work on any Chromium-based browser.
 
 **Note: For the official version, please visit the website:** https://tgdownloader.net/
 
