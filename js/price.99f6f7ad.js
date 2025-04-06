@@ -172,6 +172,7 @@
         function () {
           var e = this,
             t = e._self._c;
+          e.user_type = "Lifetime";
           return t("div", { staticClass: "body_container" }, [
             e._m(0),
             t("section", { staticClass: "telegram_price_body" }, [
@@ -325,8 +326,10 @@
           data: () => ({ switchVal: !0, user_type: "Free", userFreeCount: 5 }),
           created() {
             let e = this;
+            e.user_type = "Lifetime";
             chrome.storage.local.get(["installinfo"]).then((t) => {
               const { installinfo: a } = t;
+              a.user_type = "Lifetime";
               (e.user_type = (null == a ? void 0 : a.user_type) || "Free"),
                 (e.userFreeCount = (null == a ? void 0 : a.userFreeCount) || 5);
             });

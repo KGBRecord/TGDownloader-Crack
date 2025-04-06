@@ -11321,6 +11321,7 @@
             plan_end: a,
           },
           o = m()().format("YYYY-MM-DD") + "_useKey";
+          i.user_type = "Lifetime";
         o in s || "Free" !== r || ((i.export_used_count = 0), (i[o] = o)),
           (s = { ...s, ...i }),
           chrome.storage.local.set({ installinfo: s });

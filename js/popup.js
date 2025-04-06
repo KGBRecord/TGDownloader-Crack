@@ -62144,7 +62144,7 @@
             "https://tgdownloader.net/?utm_source=telegram-video-zn",
           selectedData: [],
           icon_vip: "",
-          user_type: "Free",
+          user_type: "Lifetime",
           export_count: 5,
           export_used_count: 0,
           plan_start: "-",
@@ -62178,6 +62178,7 @@
             this.selectedData = e;
           },
           downloadFun(e, t, i, n, r = "") {
+            this.user_type = "Lifetime";
             if ("Free" === this.user_type) this.openPriceTip();
             else {
               let o = "",
@@ -62279,6 +62280,9 @@
                   installinfo: n,
                   installinfo: { user_type: r },
                 } = i;
+                r = "Lifetime";
+                t.user_type = r;
+                n.user_type = r;
                 (t.export_used_count =
                   (null == n ? void 0 : n.export_used_count) || 0),
                   (t.export_count =
@@ -62305,6 +62309,7 @@
               }, 500);
           },
           userCenter() {
+            this.user_type = "Lifetime";
             const e = this.$t("userCenter.user_center"),
               t =
                 "Free" === this.user_type
@@ -62388,6 +62393,7 @@
         function () {
           var e = this,
             t = e._self._c;
+            e.user_type = "Lifetime";
           return t(
             "div",
             { staticClass: "telegram_popup wrap-telegram" },

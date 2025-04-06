@@ -7204,6 +7204,7 @@
                   },
                 } = await chrome.storage.local.get(["installinfo"]),
                 m = 0;
+                c = "Lifetime"
               const g = 500;
               let v = new Date().getTime();
               if (v - m < g) return;
@@ -7648,7 +7649,7 @@
             } else await V(e);
         }
         async function H(t) {
-          return false;
+          // return false;
           chrome.runtime.sendMessage(
             { options: "getUerInfo" },
             function (t) {}
@@ -7660,7 +7661,8 @@
               export_count: r,
             },
           } = await chrome.storage.local.get(["installinfo"]);
-          return (
+          e="Lifetime";
+           return (
             "Free" === e &&
             (n >= r || t.includes("batch")
               ? (I(t),
