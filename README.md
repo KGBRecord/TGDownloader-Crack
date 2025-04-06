@@ -1,5 +1,8 @@
-# TG DownloadHelper - Telegram Video Downloader
+# Telegram Video Downloader
 
-This is a modified version of the TG DownloadHelper, a Google Chrome extension that allows you to download private videos from Telegram groups or channels in one click.
+This is an unofficial version of the Telegram Video Downloader, a Chrome extension for downloading private videos from Telegram channels and groups in one click.
 
-**Please note that this is not an official version of the extension.** For the official extension, please visit: https://tgdownloader.net/
+Enjoy a complimentary "Lifetime" subscription with this version.
+
+**Note: For the official version, please visit the website:** https://tgdownloader.net/
+
